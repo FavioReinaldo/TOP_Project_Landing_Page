@@ -1,0 +1,91 @@
+
+/*  DOCUMENTO DE ESTILO */
+
+
+/*-----------General Style-----------*/
+
+*{
+    margin:0;
+    padding:0
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(15, 76, 117);
+}
+
+
+img {   
+    padding: 0px;
+    vertical-align:top;
+    height: 200px;
+    width:auto; 
+    object-fit:cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*-----------Header-----------*/
+
+header {
+    background-color: #1f2937;
+    width: 1200px;
+    
+}
+
+
+.LeftRightContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+.right {
+    flex-direction: row;
+ }
+
+
+.awesome {
+    display: flex;
+
+ }
+
+.awesome h1, .awesome p, .awesome a {
+    flex-direction: row;
+ }
+
+ .topImg    {
+    flex-direction: row;
+ }
+
+
+
+
+/*-----------Article-----------*/
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+}
+  
+.info {
+    max-width: 200px;
+}
