@@ -19,6 +19,21 @@ body {
     color:#fff;
 }
 
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0px;
+} 
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0px;
+} 
+
+p{
+    margin: 15px 0px;
+} 
 
 img {   
     padding: 0px; 
@@ -40,7 +55,7 @@ a {
     text-decoration: none;
     color:#fff;
     border:2px solid;
-    background-color: rgb(15, 76, 117);;
+    background-color: rgb(15, 76, 117);
     border-color:rgb(15, 76, 117);
     border-radius: 5px;
     
@@ -62,12 +77,12 @@ header {
     justify-content: center;
 }
     
-.wrapper {
+.wrapperLogoMenu {
     width: 1200px;
     display: flex;
     flex-direction: column;
-    padding: 8px;
-  }
+    padding: 50px 0px;
+}
 
 
 .logoMenuContainer{
@@ -77,13 +92,15 @@ header {
 }
 
 .logo{
-  font-size: 24px;
+  font-size: 30px;
   font-weight:bold;
+  width: 50%;
 }
 
 .menu {
     display: flex;
     gap: 20px;
+    width: 50%;
  }
 
 
@@ -94,19 +111,16 @@ header {
     padding: 20px 0px;
 }
 
-.heroText h1{
-    font-size: 48px;
-    font-weight: bold;
-    margin: 10px 0px;
-    
- } 
-
-.heroText p{
-    margin: 15px 0px;
-} 
+.heroText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 .heroImg {
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -117,13 +131,48 @@ header {
 
 
 /*-----------Article-----------*/
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 52px;
-}
   
-.info {
-    max-width: 200px;
+#articleSection{
+    background-color: #fff;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
 }
+
+.wrapperArticleSection {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    align-items: center;
+  }
+
+
+.articleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.info figure img{
+    border:5px solid;
+    border-color:rgb(15, 76, 117);
+    border-radius: 10px;
+}
+
+.info figure img:hover{
+    border:5px solid;
+    border-color:rgb(15, 76, 117);
+    border-radius: 10px;
+}
+
+  
