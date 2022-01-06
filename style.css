@@ -1,7 +1,4 @@
 
-/*  DOCUMENTO DE ESTILO */
-
-
 /*-----------General Style-----------*/
 
 *{
@@ -28,11 +25,17 @@ h1{
 h2{
     font-size: 36px;
     font-weight: bold;
-    margin: 10px 0px;
+    padding-bottom: 50px;
 } 
 
+h3{
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+
 p{
-    margin: 15px 0px;
+    margin: 18px 0px;
 } 
 
 img {   
@@ -40,33 +43,13 @@ img {
     object-fit:cover;
     border-radius: 5px;
     flex: 1;
-    max-height: 300px;
+    height: 200px;
+    width: 200px;
 }
 
 ul {
     list-style-type: none;
 }
-
-a {
-    display: block;
-    text-align: center;
-    width: 150px;
-    line-height: 40px;
-    text-decoration: none;
-    color:#fff;
-    border:2px solid;
-    background-color: rgb(15, 76, 117);
-    border-color:rgb(15, 76, 117);
-    border-radius: 5px;
-    
-}
-a:hover {
-    background-color: #1f2937;;
-    color:#fff;
-    border:2px solid;
-    border-color:#fff;
-}
-
 
 
 /*-----------Header-----------*/
@@ -82,13 +65,14 @@ header {
     display: flex;
     flex-direction: column;
     padding: 50px 0px;
+    
 }
-
 
 .logoMenuContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 75px;
 }
 
 .logo{
@@ -103,6 +87,25 @@ header {
     width: 50%;
  }
 
+ header a {
+    display: block;
+    text-align: center;
+    width: 150px;
+    line-height: 40px;
+    text-decoration: none;
+    color:#fff;
+    border:2px solid;
+    background-color: rgb(15, 76, 117);
+    border-color:rgb(15, 76, 117);
+    border-radius: 5px;
+    
+}
+header a:hover {
+    background-color: #1f2937;;
+    color:#fff;
+    border:2px solid;
+    border-color:#fff;
+}
 
 .hero{
     display: flex;
@@ -115,7 +118,8 @@ header {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 
@@ -125,7 +129,10 @@ header {
     justify-content: center;
 }
 
-
+.heroImg img{ 
+    height: 300px;
+    width: auto;
+}
 
 
 
@@ -160,7 +167,7 @@ header {
     align-items: center;
     max-width: 200px;
     text-align: center;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .info figure img{
@@ -175,4 +182,100 @@ header {
     border-radius: 10px;
 }
 
-  
+  /*-----------Quote-----------*/
+    
+#quote{
+    background-color: #E5E7EB;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperQuote{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    align-items: center;
+  }
+
+.wrapperQuote p {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  p.boldP{
+    color: #1f2937;
+    font-size: 36px;
+    font-style:normal;
+    font-weight: bold;
+  }
+
+  /*-----------Sign Up-----------*/
+
+#signUp{
+    background-color: #fff;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 50px 25px;
+}
+
+.wrapperSignUp{
+    width: 1200px;
+    display: flex;
+    padding: 50px 25px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(15, 76, 117);
+    color:#fff;
+    border-radius: 7px;
+  }
+
+
+  .wrapperSignUp a{
+    display: block;
+    text-align: center;
+    width: 150px;
+    line-height: 40px;
+    text-decoration: none;
+    color:#fff;
+    border:2px solid;
+    background-color: rgb(15, 76, 117);
+    border-color:#fff;
+    border-radius: 5px;
+    
+}
+.wrapperSignUp a:hover {
+    background-color: #fff;;
+    color:rgb(15, 76, 117);
+    border:2px solid;
+    border-color:rgb(15, 76, 117);
+}
+
+  /*-----------Footer-----------*/
+
+  footer{
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+
+ footer p a {
+    text-decoration: none;
+    /* display: inline;
+    text-align: center; */
+    color:#fff;
+    padding:5px;
+}
+
+footer p a:hover {
+    background-color:#fff; ;
+    color:#1f2937;
+}
